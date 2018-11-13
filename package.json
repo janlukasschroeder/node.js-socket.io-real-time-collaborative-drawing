@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-socketio-drawing-server",
+  "name": "nodejs-socketio-real-time-collaborative-drawing",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
