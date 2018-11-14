@@ -1,5 +1,6 @@
 window.onload = function() {
-  let socket = io.connect("https://w074py96r8.sse.codesandbox.io/");
+  const url = "https://qzn5lpr0lq.sse.codesandbox.io";
+  let socket = io.connect(url);
   let prev = {};
   let canvas = document.getElementById("canvas");
   let context = canvas.getContext("2d");
