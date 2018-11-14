@@ -1,5 +1,5 @@
 window.onload = function() {
-  const url = "https://qzn5lpr0lq.sse.codesandbox.io";
+  const url = window.location.origin || "https://qzn5lpr0lq.sse.codesandbox.io";
   let socket = io.connect(url);
   let prev = {};
   let canvas = document.getElementById("canvas");
