@@ -32,14 +32,14 @@ window.onload = function() {
         break;
 
       case "mousemove":
-        if (now() - lastEmit > 50) {
-          socket.emit("mousemove", {
-            x: e.pageX,
-            y: e.pageY,
-            drawing: drawing
-          });
-          lastEmit = now();
-        }
+        // if (now() - lastEmit > 5) {
+        socket.emit("mousemove", {
+          x: e.pageX,
+          y: e.pageY,
+          drawing: drawing
+        });
+        lastEmit = now();
+        // }
 
         if (drawing) {
           drawLine(prev.x, prev.y, e.pageX, e.pageY);
